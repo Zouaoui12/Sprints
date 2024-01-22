@@ -91,7 +91,7 @@ let sumOddEven = (array) => {
     return output
 }
 
-//7.Write a function called shortestOfMixed that takes an array of mixed elements as a parameter, and returns the 
+//8.Write a function called shortestOfMixed that takes an array of mixed elements as a parameter, and returns the 
 //shortest string within the given array.
 //!! [1,3,"hi",2,"pizza","j"] => "j"
 let shortestOfMixed = (array)=> {
