@@ -109,3 +109,23 @@ function sumUntil(array, index) {
         return result
     
     }
+    // 9.Write a function called average that takes an array as a parameter 
+        // and returns the average of all the elements in the array.
+        function Average(array) { 
+            let result = 0; 
+            for (let i = 0; i < array.length; i++) { 
+              result += array[i]; 
+            } 
+            return result/ array.length; 
+          } 
+        //   10.Write a function called square that takes an array as a parameter 
+        //   and returns a new array where each element is the square of the element of the given array.
+        function square(array) {
+           
+         } 
+        // 11.Write a function called isArray that takes one parameter
+        //  and returns true if the input is array otherwise returns false.
+        function isArray(array) {
+             
+         }  
+         

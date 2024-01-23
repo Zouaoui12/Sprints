@@ -66,3 +66,18 @@ function addProperty(object, key) {
        console.log(obj[key]) 
     }
     }
+    // EXTENTED
+// 1.Write a function called removeNumbersLargerThan that takes two parameters, a number and an object. It then removes all properties with values larger than the specified number.
+function removeNumbersLargerThan(num, obj) {
+  let arr = [];
+  for (let i = 0; i < obj.length; i++) {
+ 
+  } return arr[i] > num;}
+
+
+    // 4.Write a function called transformFirstAndLast that takes an array as a parameter and returns an object with one property where: The first element of the array is the key. The last element of the array is the value.
+    function transformFirstAndLast(array) {
+
+      let Object = {};
+      Object[array[0]] = array[array.length-1];
+      return Object;}

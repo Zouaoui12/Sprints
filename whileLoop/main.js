@@ -108,3 +108,28 @@ function productMinToMax(min, max) {
     }
     return count  // returning the counter
  } 
+//  EXTENTED
+// 1.Write a function called reverseString that takes a string as 
+// an input and returns that string in reverse.
+function reverseString(string) {
+    let result=""
+let i = string.length-1
+while (i>=0) {
+    result= result+string.at(i)
+    i--
+}
+return result
+ }  
+//  2.Write a function called getIndexOf that takes two parameters,
+//  a string, and a character, and returns the first position of
+//   the character in that string.
+ function getIndexOf(string, char) {
+   
+ }  
+//  IMMERSIVE
+// 1.Write a function called sumEven that takes two numbers as parameters
+//  and returns the sum of all even numbers starting from num1 and excluding
+//   num2.
+function sumEven(number1, number2) {
+    
+ }  

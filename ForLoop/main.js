@@ -143,4 +143,24 @@ function countCharAtIndexWithWhile(string1,position,string2) {
     }
     return result 
  } 
+//  2.Write a function called getIndexOf that takes two parameters,
+//  a string, and a character, and returns the first position
+//   of the character in that string.
+function getIndexOf(string, char) {
+let result =0
+for (let i=0; i < string.length; i++) {
+    if (string[i] === char) {
+      return i;
+    }
+  }
+  return result
+ }
+//  IMMERSIVE
+// 1.Write a function called sumEven that takes two numbers as parameters
+//  and returns the sum of all even numbers starting from num1 and
+//  excluding num2.
+
+function sumEven(number1, number2) {
+   // code here 
+}  
 
