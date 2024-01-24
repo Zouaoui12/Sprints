@@ -1,18 +1,28 @@
 //ESSENTIAL
-//1.Fix the syntax 
-//& style issues with the three objects below:
+// 1.Fix the syntax & style 
+// issues with the three objects below:
 
-let obj1= {firstName: 'Yan', lastname: 'Fan' } 
+let obj1 = {
+  firstName: 'Yan',
+  lastname: 'Fan'
+}
 
-let obj2 = {a: 1, b:2, c: 3 ,d: 4} 
-let obj3 = { 
-      animal: 'dog', 
+let obj2 = { a: 1,
+   b: 2, 
+   c: 3,
+    d:4} 
+
+    let obj3 = { 
+      animal: 'dog' ,
       noise: 'bark', 
       age: 3, 
       type :'Golden Retriever' ,
-      color: 'Yellow', 
+      color: 'Yellow'
 }
-// 2. Create an object that represents you. It should contain your first name, last name, age and hometown. Assign it to a variable called person.
+
+
+//2. Create an object that represents you. It should contain your first name, last name, age and hometown. Assign it to a variable called person.
+
 let person = {
     firstName: "sabrine",
      lastName :"zouaoui",
@@ -66,18 +76,3 @@ function addProperty(object, key) {
        console.log(obj[key]) 
     }
     }
-    // EXTENTED
-// 1.Write a function called removeNumbersLargerThan that takes two parameters, a number and an object. It then removes all properties with values larger than the specified number.
-function removeNumbersLargerThan(num, obj) {
-  let arr = [];
-  for (let i = 0; i < obj.length; i++) {
- 
-  } return arr[i] > num;}
-
-
-    // 4.Write a function called transformFirstAndLast that takes an array as a parameter and returns an object with one property where: The first element of the array is the key. The last element of the array is the value.
-    function transformFirstAndLast(array) {
-
-      let Object = {};
-      Object[array[0]] = array[array.length-1];
-      return Object;}
