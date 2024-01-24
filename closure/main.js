@@ -3,7 +3,7 @@ function makeCat(initial) {
     obj.tiredness=sleep,
     obj.hunger=feed,
     obj.lonliness= play,
-    obj.happiness=pet,
+    obj.happiness=pet
     
    return obj
 }
