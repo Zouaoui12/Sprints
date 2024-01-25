@@ -36,6 +36,10 @@ const quizQuestions = [
 
 
 let questionIndex = 0;
+let score=0 
+document.getElementById("score").innerText=score 
+let next=document.getElementById("next")
+next.disabled= true
 function displayFunc() {
   let currentQuestion=quizQuestions[questionIndex]
   document.getElementById("question").innerText=currentQuestion.description
@@ -48,32 +52,37 @@ function displayFunc() {
 
 
   function changeIndex() {
+ 
   
-if (questionIndex<quizQuestions.length-1) { 
+if (questionIndex<quizQuestions.length-1 ) { 
   questionIndex++
+  next.disabled= true
   displayFunc()
 }
-else alert(" you win! ")
+else alert(" game over ")
     
   }
   
 function submitQuestion() {
-  let userAnswer = document.getElementById("answer").value
-  let right=quizQuestions[questionIndex].answer
+  let userAnswer = document.getElementById("answer").value.toLowerCase()
+  let right=quizQuestions[questionIndex].answer.toLowerCase()
+ let  points = quizQuestions[questionIndex].point
   if (userAnswer===right) {
-    alert("right answer")
-    
-  }else{
+    alert("correct answer")
+   score += points
+   next.disabled= false 
+   document.getElementById("score").innerHTML = score
+    document.getElementById("answer").value=""
+  }
+else if( userAnswer !==  right) {
+  alert("wrong")
+}
+
+  else{
 alert("try again")
   } 
+
+  
 }
-function updateScore( ) {
-  let scoreDisplay = document.getElementById("score").value
-  let userScore=quizQuestions[questionIndex].point
-  if (userScore=== ) {
-    
-  } else {
-    
-  }
-}
+
 
