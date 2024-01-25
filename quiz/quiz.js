@@ -23,6 +23,57 @@ const quizQuestions = [
       coverImg:"https://www.manga-news.com/public/images/pix/dvd/690/One-piece-anime-east-blue.jpg",
       character : "/assets/img/onePiece.png"
     },
-  ];
+   
+]
+//   document.getElementById("score")
+//   console.log(document.getElementById("score") )
+//  let element=document.getElementsByClassName("cardGlob")
+//  console.log(document.getElementsByClassName("cardGlob"))
+//  let elements=document.getElementsByTagName("p")
+//  console.log(elements);
+//  document.querySelector("#score")
+//  console.log(document.querySelector("#score"));
+
+
+let questionIndex = 0;
+function displayFunc() {
+  let currentQuestion=quizQuestions[questionIndex]
+  document.getElementById("question").innerText=currentQuestion.description
+  document.getElementById("cover").src=currentQuestion.coverImg
+  document.getElementById("character").src=currentQuestion.character
  
- 
+    
+  }
+  displayFunc()
+
+
+  function changeIndex() {
+  
+if (questionIndex<quizQuestions.length-1) { 
+  questionIndex++
+  displayFunc()
+}
+else alert(" you win! ")
+    
+  }
+  
+function submitQuestion() {
+  let userAnswer = document.getElementById("answer").value
+  let right=quizQuestions[questionIndex].answer
+  if (userAnswer===right) {
+    alert("right answer")
+    
+  }else{
+alert("try again")
+  } 
+}
+function updateScore( ) {
+  let scoreDisplay = document.getElementById("score").value
+  let userScore=quizQuestions[questionIndex].point
+  if (userScore=== ) {
+    
+  } else {
+    
+  }
+}
+
